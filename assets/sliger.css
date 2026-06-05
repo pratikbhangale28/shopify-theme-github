@@ -1671,6 +1671,23 @@ body:has(.sliger-shop-page) .sliger-button-secondary {
   margin-top: 26px;
 }
 
+.sliger-shop-proof {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 22px;
+}
+
+.sliger-shop-proof span {
+  border: 1px solid rgba(17, 21, 20, 0.1);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.68);
+  color: rgba(17, 21, 20, 0.68);
+  padding: 8px 11px;
+  font-size: 0.78rem;
+  font-weight: 780;
+}
+
 .sliger-shop-hero__media {
   position: relative;
   min-height: 430px;
@@ -1761,6 +1778,19 @@ body:has(.sliger-shop-page) .sliger-button-secondary {
   transform: rotate(9deg);
 }
 
+.sliger-shop-hero__product--four {
+  left: 61%;
+  bottom: 3%;
+  z-index: 1;
+  width: min(23vw, 165px);
+  max-height: 270px;
+  border: 8px solid rgba(255, 255, 255, 0.78);
+  border-radius: 8px;
+  object-fit: cover;
+  transform: rotate(-4deg);
+  box-shadow: 0 20px 54px rgba(17, 21, 20, 0.16);
+}
+
 .sliger-shop-hero__badge-card {
   position: absolute;
   right: 13%;
@@ -1840,7 +1870,7 @@ body:has(.sliger-shop-page) .sliger-button-secondary {
   justify-content: space-between;
   border: 1px solid var(--sliger-shop-line);
   background:
-    radial-gradient(circle at 100% 0%, rgba(141, 181, 120, 0.2), transparent 34%),
+    radial-gradient(circle at 100% 0%, rgba(141, 181, 120, 0.24), transparent 34%),
     #ffffff;
   padding: 18px;
   transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
@@ -1889,7 +1919,7 @@ body:has(.sliger-shop-page) .sliger-button-secondary {
 .sliger-shop-products {
   display: grid;
   gap: clamp(18px, 2.4vw, 30px);
-  margin-top: 38px;
+  margin-top: 42px;
 }
 
 .sliger-shop-product {
@@ -1909,6 +1939,7 @@ body:has(.sliger-shop-page) .sliger-button-secondary {
   background: #f6f6f4;
   color: inherit;
   text-decoration: none;
+  box-shadow: inset 0 0 0 1px rgba(17, 21, 20, 0.035);
 }
 
 .sliger-shop-product__image--cutout {
@@ -1964,9 +1995,9 @@ body:has(.sliger-shop-page) .sliger-button-secondary {
 
 .sliger-shop-product__body p {
   margin: 0;
-  color: #111514;
+  color: #3d8060;
   font-size: 0.86rem;
-  font-weight: 750;
+  font-weight: 850;
 }
 
 .sliger-shop-product__body h3 {
@@ -2176,6 +2207,14 @@ body:has(.sliger-shop-page) .sliger-button-secondary {
     right: 3%;
     top: 8%;
     width: 34%;
+  }
+
+  .sliger-shop-hero__product--four {
+    left: 52%;
+    bottom: 8%;
+    width: 25%;
+    max-height: 178px;
+    border-width: 5px;
   }
 
   .sliger-shop-hero__badge-card {
