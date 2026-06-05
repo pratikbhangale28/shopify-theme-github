@@ -38,7 +38,11 @@
 
       <div class="sliger-shop-hero__media" aria-label="Featured cleanser products">
         <div class="sliger-shop-leaf" aria-hidden="true"></div>
-        <img class="sliger-shop-hero__product sliger-shop-hero__product--one" src="{{ 'sliger-simple-facewash.jpg' | asset_url }}" alt="Simple Refreshing Facial Wash" width="736" height="1104" loading="eager">
+        <div class="sliger-shop-hero__badge-card">
+          <span>4 picks</span>
+          <strong>Fresh, foam, brighten, balance</strong>
+        </div>
+        <img class="sliger-shop-hero__product sliger-shop-hero__product--one sliger-shop-hero__product--cutout" src="{{ 'sliger-simple-facewash-cutout.png' | asset_url }}" alt="Simple Refreshing Facial Wash" width="408" height="612" loading="eager">
         <img class="sliger-shop-hero__product sliger-shop-hero__product--two sliger-shop-hero__product--cutout" src="{{ 'sliger-ordinary-glucoside-cutout.png' | asset_url }}" alt="The Ordinary Glucoside Foaming Cleanser" width="447" height="559" loading="eager">
         <img class="sliger-shop-hero__product sliger-shop-hero__product--three sliger-shop-hero__product--cutout" src="{{ 'sliger-minimalist-cleanser-cutout.png' | asset_url }}" alt="Minimalist Alpha Lipoic and Glycolic Cleanser" width="426" height="586" loading="eager">
       </div>
@@ -117,8 +121,8 @@
         </article>
 
         <article class="sliger-shop-product" data-sliger-product="fresh sensitive daily">
-          <a class="sliger-shop-product__image" href="{{ simple_link }}" target="_blank" rel="sponsored noopener noreferrer">
-            <img src="{{ 'sliger-simple-facewash.jpg' | asset_url }}" alt="Simple Refreshing Facial Wash" width="736" height="1104" loading="lazy">
+          <a class="sliger-shop-product__image sliger-shop-product__image--cutout sliger-shop-product__image--green" href="{{ simple_link }}" target="_blank" rel="sponsored noopener noreferrer">
+            <img src="{{ 'sliger-simple-facewash-cutout.png' | asset_url }}" alt="Simple Refreshing Facial Wash" width="408" height="612" loading="lazy">
             <span>Fresh</span>
           </a>
           <div class="sliger-shop-product__body">
@@ -153,7 +157,7 @@
           <p>Start with Simple for a fresh feel, or choose The Ordinary when you want a gentle foaming cleanser.</p>
           <a class="sliger-button-secondary" href="{{ simple_link }}" target="_blank" rel="sponsored noopener noreferrer">Explore Simple</a>
         </div>
-        <img src="{{ 'sliger-simple-facewash.jpg' | asset_url }}" alt="Simple Refreshing Facial Wash" width="736" height="1104" loading="lazy">
+        <img class="sliger-shop-promo__cutout sliger-shop-promo__cutout--simple" src="{{ 'sliger-simple-facewash-cutout.png' | asset_url }}" alt="Simple Refreshing Facial Wash" width="408" height="612" loading="lazy">
       </article>
 
       <article class="sliger-shop-promo sliger-shop-promo--green">
