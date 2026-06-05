@@ -39,8 +39,8 @@
       <div class="sliger-shop-hero__media" aria-label="Featured cleanser products">
         <div class="sliger-shop-leaf" aria-hidden="true"></div>
         <img class="sliger-shop-hero__product sliger-shop-hero__product--one" src="{{ 'sliger-simple-facewash.jpg' | asset_url }}" alt="Simple Refreshing Facial Wash" width="736" height="1104" loading="eager">
-        <img class="sliger-shop-hero__product sliger-shop-hero__product--two" src="{{ 'sliger-ordinary-glucoside-cleanser.jpg' | asset_url }}" alt="The Ordinary Glucoside Foaming Cleanser" width="736" height="920" loading="eager">
-        <img class="sliger-shop-hero__product sliger-shop-hero__product--three" src="{{ 'sliger-minimalist-cleanser.jpg' | asset_url }}" alt="Minimalist Alpha Lipoic and Glycolic Cleanser" width="726" height="1000" loading="eager">
+        <img class="sliger-shop-hero__product sliger-shop-hero__product--two sliger-shop-hero__product--cutout" src="{{ 'sliger-ordinary-glucoside-cutout.png' | asset_url }}" alt="The Ordinary Glucoside Foaming Cleanser" width="447" height="559" loading="eager">
+        <img class="sliger-shop-hero__product sliger-shop-hero__product--three sliger-shop-hero__product--cutout" src="{{ 'sliger-minimalist-cleanser-cutout.png' | asset_url }}" alt="Minimalist Alpha Lipoic and Glycolic Cleanser" width="426" height="586" loading="eager">
       </div>
     </div>
 
@@ -59,6 +59,29 @@
         <p>Four sorted face wash picks with clean product cards and direct buying links.</p>
       </div>
 
+      <div class="sliger-shop-finder" aria-label="Find a cleanser by skin moment">
+        <article>
+          <span>Brighten</span>
+          <strong>Uneven or dull skin feel</strong>
+          <a href="{{ minimalist_link }}" target="_blank" rel="sponsored noopener noreferrer">Choose Minimalist</a>
+        </article>
+        <article>
+          <span>Balance</span>
+          <strong>Normal to oily routine</strong>
+          <a href="{{ cerave_link }}" target="_blank" rel="sponsored noopener noreferrer">Choose CeraVe</a>
+        </article>
+        <article>
+          <span>Fresh</span>
+          <strong>Simple everyday cleanse</strong>
+          <a href="{{ simple_link }}" target="_blank" rel="sponsored noopener noreferrer">Choose Simple</a>
+        </article>
+        <article>
+          <span>Gentle foam</span>
+          <strong>Sensitive-skin friendly wash</strong>
+          <a href="{{ ordinary_link }}" target="_blank" rel="sponsored noopener noreferrer">Choose The Ordinary</a>
+        </article>
+      </div>
+
       <div class="sliger-product-toolbar sliger-shop-toolbar" data-sliger-filter-group>
         <button class="sliger-filter is-active" type="button" data-sliger-filter="all" aria-pressed="true">All</button>
         <button class="sliger-filter" type="button" data-sliger-filter="fresh" aria-pressed="false">Fresh</button>
@@ -69,8 +92,8 @@
 
       <div class="sliger-shop-products">
         <article class="sliger-shop-product" data-sliger-product="brightening daily">
-          <a class="sliger-shop-product__image" href="{{ minimalist_link }}" target="_blank" rel="sponsored noopener noreferrer">
-            <img src="{{ 'sliger-minimalist-cleanser.jpg' | asset_url }}" alt="Minimalist Alpha Lipoic and Glycolic Cleanser" width="726" height="1000" loading="lazy">
+          <a class="sliger-shop-product__image sliger-shop-product__image--cutout sliger-shop-product__image--warm" href="{{ minimalist_link }}" target="_blank" rel="sponsored noopener noreferrer">
+            <img src="{{ 'sliger-minimalist-cleanser-cutout.png' | asset_url }}" alt="Minimalist Alpha Lipoic and Glycolic Cleanser" width="426" height="586" loading="lazy">
             <span>-7%</span>
           </a>
           <div class="sliger-shop-product__body">
@@ -107,8 +130,8 @@
         </article>
 
         <article class="sliger-shop-product" data-sliger-product="foaming sensitive daily">
-          <a class="sliger-shop-product__image" href="{{ ordinary_link }}" target="_blank" rel="sponsored noopener noreferrer">
-            <img src="{{ 'sliger-ordinary-glucoside-cleanser.jpg' | asset_url }}" alt="The Ordinary Glucoside Foaming Cleanser" width="736" height="920" loading="lazy">
+          <a class="sliger-shop-product__image sliger-shop-product__image--cutout" href="{{ ordinary_link }}" target="_blank" rel="sponsored noopener noreferrer">
+            <img src="{{ 'sliger-ordinary-glucoside-cutout.png' | asset_url }}" alt="The Ordinary Glucoside Foaming Cleanser" width="447" height="559" loading="lazy">
           </a>
           <div class="sliger-shop-product__body">
             <p>Amazon price varies</p>
@@ -140,7 +163,7 @@
           <p>Pick brightening, foaming, fresh, or sensitive-skin friendly cleansing without searching through a crowded catalog.</p>
           <a class="sliger-button-secondary" href="#compare">Compare All</a>
         </div>
-        <img src="{{ 'sliger-ordinary-glucoside-cleanser.jpg' | asset_url }}" alt="The Ordinary Glucoside Foaming Cleanser" width="736" height="920" loading="lazy">
+        <img class="sliger-shop-promo__cutout" src="{{ 'sliger-ordinary-glucoside-cutout.png' | asset_url }}" alt="The Ordinary Glucoside Foaming Cleanser" width="447" height="559" loading="lazy">
       </article>
     </div>
   </section>
