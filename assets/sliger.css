@@ -3137,3 +3137,91 @@ body:has(.sliger-premium-home) .sliger-nav a:hover {
     animation: none;
   }
 }
+
+/* Final product-showcase polish */
+.sliger-premium-home .sliger-premium-hero {
+  min-height: clamp(430px, 48vw, 590px);
+}
+
+.sliger-premium-home .sliger-premium-hero__content {
+  padding-block: clamp(70px, 9vw, 128px);
+}
+
+.sliger-premium-home .sliger-hero-product {
+  display: none;
+}
+
+.sliger-premium-home .sliger-premium-products {
+  background:
+    linear-gradient(180deg, #ffffff 0%, #f2fbfe 100%);
+}
+
+.sliger-premium-home .sliger-premium-product-row {
+  overflow: visible;
+  grid-auto-flow: initial;
+  grid-auto-columns: initial;
+  grid-template-columns: 1fr;
+  align-items: start;
+}
+
+.sliger-premium-home .sliger-premium-product-intro {
+  grid-column: auto;
+  min-height: 300px;
+}
+
+.sliger-premium-home .sliger-premium-card__image {
+  min-height: 330px;
+  background: #ffffff;
+}
+
+.sliger-premium-home .sliger-premium-card__image img {
+  width: min(82%, 255px);
+  max-height: 285px;
+}
+
+.sliger-premium-home .sliger-premium-card__body h3 {
+  min-height: 2.5em;
+}
+
+@media screen and (min-width: 750px) {
+  .sliger-premium-home .sliger-premium-product-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sliger-premium-home .sliger-premium-product-intro {
+    grid-column: span 2;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .sliger-premium-home .sliger-premium-product-row {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .sliger-premium-home .sliger-premium-product-intro {
+    grid-column: span 1;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .sliger-premium-home .sliger-premium-hero {
+    min-height: auto;
+  }
+
+  .sliger-premium-home .sliger-premium-hero__content {
+    padding-block: 54px 62px;
+  }
+
+  .sliger-premium-home .sliger-premium-hero h1 {
+    max-width: 420px;
+  }
+
+  .sliger-premium-home .sliger-premium-product-row {
+    grid-template-columns: 1fr;
+  }
+
+  .sliger-premium-home .sliger-premium-card__image,
+  .sliger-premium-home .sliger-premium-product-intro {
+    min-height: 300px;
+  }
+}

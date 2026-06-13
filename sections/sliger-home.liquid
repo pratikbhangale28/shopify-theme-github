@@ -42,10 +42,6 @@
       <span class="sliger-hero-prop sliger-hero-prop--leaf"></span>
       <span class="sliger-hero-prop sliger-hero-prop--foam"></span>
       <span class="sliger-hero-prop sliger-hero-prop--drop"></span>
-      <img class="sliger-hero-product sliger-hero-product--simple" src="{{ 'sliger-product-dot-key.jpg' | asset_url }}" alt="" width="1500" height="1500" loading="eager">
-      <img class="sliger-hero-product sliger-hero-product--ordinary" src="{{ 'sliger-product-face-shop-rice.jpg' | asset_url }}" alt="" width="1000" height="1000" loading="eager">
-      <img class="sliger-hero-product sliger-hero-product--minimalist" src="{{ 'sliger-product-minimalist.webp' | asset_url }}" alt="" width="300" height="300" loading="eager">
-      <img class="sliger-hero-product sliger-hero-product--cetaphil" src="{{ 'sliger-product-sebamed.jpg' | asset_url }}" alt="" width="1083" height="1500" loading="eager">
     </div>
 
     <div class="sliger-shell sliger-premium-hero__content">
@@ -56,37 +52,6 @@
         <a class="sliger-premium-button" href="#shop">Shop cleansers <span aria-hidden="true">&rarr;</span></a>
         <a class="sliger-premium-button sliger-premium-button--light" href="#compare">Compare picks <span aria-hidden="true">&rarr;</span></a>
       </div>
-    </div>
-  </section>
-
-  <section class="sliger-premium-proof" aria-labelledby="sliger-proof-title">
-    <div class="sliger-shell sliger-premium-proof__grid">
-      <div class="sliger-premium-quote">
-        <h2 id="sliger-proof-title">"A short, clean edit of skincare bestsellers makes choosing a cleanser feel simple and premium."</h2>
-        <div class="sliger-premium-press" aria-label="Shopping proof points">
-          <span>Hydrating</span>
-          <span>Brightening</span>
-          <span>Sensitive skin</span>
-          <span>Oil control</span>
-        </div>
-      </div>
-
-      <a class="sliger-premium-review" href="#shop">
-        <strong>7 focused cleanser picks</strong>
-        <span aria-label="Five stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-        <small>shop the edit</small>
-      </a>
-    </div>
-  </section>
-
-  <section class="sliger-premium-benefits" aria-label="Product benefits">
-    <div class="sliger-premium-benefits__track">
-      <span>Dermatologist-loved formulas</span>
-      <span>Hydrating options</span>
-      <span>Gentle daily cleansing</span>
-      <span>Brightening routines</span>
-      <span>Amazon checkout</span>
-      <span>Barrier support</span>
     </div>
   </section>
 
@@ -124,13 +89,9 @@
         </article>
 
         <article class="sliger-premium-card" data-sliger-product="sensitive hydrating">
-          <a class="sliger-premium-card__image sliger-premium-card__image--blue" href="{{ derma_link }}" target="_blank" rel="sponsored noopener noreferrer" aria-label="The Derma Co 2% Niacinamide Gentle Skin Cleanser">
+          <a class="sliger-premium-card__image sliger-premium-card__image--blue" href="{{ derma_link }}" target="_blank" rel="sponsored noopener noreferrer">
             <span>gentle</span>
-            <div class="sliger-premium-card__mock" aria-hidden="true">
-              <small>The</small>
-              <strong>Derma Co</strong>
-              <em>2% Niacinamide Gentle Skin Cleanser</em>
-            </div>
+            <img src="{{ 'sliger-product-dermaco.jpg' | asset_url }}" alt="The Derma Co 2% Niacinamide Oily Skin Cleanser" width="1080" height="1080" loading="lazy">
           </a>
           <div class="sliger-premium-card__body">
             <div>
@@ -142,13 +103,9 @@
         </article>
 
         <article class="sliger-premium-card" data-sliger-product="hydrating sensitive">
-          <a class="sliger-premium-card__image sliger-premium-card__image--green" href="{{ cerave_link }}" target="_blank" rel="sponsored noopener noreferrer" aria-label="CeraVe Hydrating Cleanser">
+          <a class="sliger-premium-card__image sliger-premium-card__image--green" href="{{ cerave_link }}" target="_blank" rel="sponsored noopener noreferrer">
             <span>hydrate</span>
-            <div class="sliger-premium-card__mock sliger-premium-card__mock--cerave" aria-hidden="true">
-              <small>CeraVe</small>
-              <strong>Hydrating Cleanser</strong>
-              <em>For normal to dry skin</em>
-            </div>
+            <img src="{{ 'sliger-product-cerave-hydrating.jpg' | asset_url }}" alt="CeraVe Hydrating Cleanser" width="1500" height="1500" loading="lazy">
           </a>
           <div class="sliger-premium-card__body">
             <div>
@@ -215,6 +172,37 @@
           </div>
         </article>
       </div>
+    </div>
+  </section>
+
+  <section class="sliger-premium-proof" aria-labelledby="sliger-proof-title">
+    <div class="sliger-shell sliger-premium-proof__grid">
+      <div class="sliger-premium-quote">
+        <h2 id="sliger-proof-title">"A short, clean edit of skincare bestsellers makes choosing a cleanser feel simple and premium."</h2>
+        <div class="sliger-premium-press" aria-label="Shopping proof points">
+          <span>Hydrating</span>
+          <span>Brightening</span>
+          <span>Sensitive skin</span>
+          <span>Oil control</span>
+        </div>
+      </div>
+
+      <a class="sliger-premium-review" href="#shop">
+        <strong>7 focused cleanser picks</strong>
+        <span aria-label="Five stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <small>shop the edit</small>
+      </a>
+    </div>
+  </section>
+
+  <section class="sliger-premium-benefits" aria-label="Product benefits">
+    <div class="sliger-premium-benefits__track">
+      <span>Dermatologist-loved formulas</span>
+      <span>Hydrating options</span>
+      <span>Gentle daily cleansing</span>
+      <span>Brightening routines</span>
+      <span>Amazon checkout</span>
+      <span>Barrier support</span>
     </div>
   </section>
 
