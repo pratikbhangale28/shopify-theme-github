@@ -3293,3 +3293,13 @@ body:has(.sliger-premium-home) .sliger-nav a:hover {
     min-height: 300px;
   }
 }
+
+body:has(.sliger-premium-home) .sliger-header__inner--brand-only {
+  display: flex;
+  justify-content: center;
+}
+
+body:has(.sliger-premium-home) .sliger-header__inner--brand-only .sliger-brand {
+  order: initial;
+  justify-self: center;
+}
