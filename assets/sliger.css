@@ -2747,6 +2747,14 @@ body:has(.sliger-premium-home) .sliger-nav a:hover {
 
 .sliger-premium-card {
   min-width: 0;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  border: 1px solid rgba(0, 77, 112, 0.08);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 14px;
+  box-shadow: 0 20px 46px rgba(0, 77, 112, 0.07);
 }
 
 .sliger-premium-card.is-hidden {
@@ -2903,9 +2911,9 @@ body:has(.sliger-premium-home) .sliger-nav a:hover {
 
 .sliger-premium-card__body {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 14px;
-  padding-top: 16px;
+  min-height: 210px;
+  gap: 18px;
+  padding-top: 18px;
 }
 
 .sliger-premium-card__body h3 {
@@ -2923,14 +2931,53 @@ body:has(.sliger-premium-home) .sliger-nav a:hover {
   line-height: 1.35;
 }
 
-.sliger-premium-card__body a {
-  align-self: start;
-  color: var(--premium-ink);
-  font-size: 0.8rem;
-  font-weight: 780;
-  text-decoration: underline;
-  text-underline-offset: 3px;
+.sliger-premium-card__details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 14px;
+}
+
+.sliger-premium-card__details span {
+  border: 1px solid rgba(0, 77, 112, 0.14);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  color: rgba(0, 77, 112, 0.76);
+  padding: 6px 10px;
+  font-size: 0.72rem;
+  font-weight: 760;
+  line-height: 1;
+}
+
+.sliger-premium-buy {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  align-self: end;
+  border: 1.5px solid var(--premium-ink);
+  border-radius: 999px;
+  background: var(--premium-ink);
+  color: #ffffff;
+  padding: 12px 18px;
+  font-size: 0.86rem;
+  font-weight: 820;
+  line-height: 1;
+  text-decoration: none;
   white-space: nowrap;
+  transition: transform 180ms ease, background 180ms ease, color 180ms ease, border-color 180ms ease;
+}
+
+.sliger-premium-home .sliger-premium-buy {
+  color: #ffffff;
+}
+
+.sliger-premium-buy:hover {
+  transform: translateY(-2px);
+  border-color: var(--premium-cyan);
+  background: var(--premium-cyan);
+  color: #ffffff;
 }
 
 .sliger-premium-story__grid,
