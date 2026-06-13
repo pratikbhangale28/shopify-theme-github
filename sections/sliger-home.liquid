@@ -1,22 +1,37 @@
 {% liquid
   assign minimalist_link = section.settings.minimalist_link
   if minimalist_link == blank
-    assign minimalist_link = 'https://amzn.to/4oeNoVx'
+    assign minimalist_link = 'https://amzn.to/4emVBT1'
+  endif
+
+  assign derma_link = section.settings.derma_link
+  if derma_link == blank
+    assign derma_link = 'https://amzn.to/43DcjIS'
   endif
 
   assign cerave_link = section.settings.cerave_link
   if cerave_link == blank
-    assign cerave_link = 'https://amzn.to/4vbHQOp'
+    assign cerave_link = 'https://amzn.to/4vSRHZn'
   endif
 
-  assign simple_link = section.settings.simple_link
-  if simple_link == blank
-    assign simple_link = 'https://amzn.to/4dWvPog'
+  assign face_shop_link = section.settings.face_shop_link
+  if face_shop_link == blank
+    assign face_shop_link = 'https://amzn.to/43y4gx6'
   endif
 
-  assign ordinary_link = section.settings.ordinary_link
-  if ordinary_link == blank
-    assign ordinary_link = 'https://amzn.to/4e0LAL6'
+  assign sebamed_link = section.settings.sebamed_link
+  if sebamed_link == blank
+    assign sebamed_link = 'https://amzn.to/4arsgFO'
+  endif
+
+  assign dotkey_link = section.settings.dotkey_link
+  if dotkey_link == blank
+    assign dotkey_link = 'https://amzn.to/4e9QAyg'
+  endif
+
+  assign neutrogena_link = section.settings.neutrogena_link
+  if neutrogena_link == blank
+    assign neutrogena_link = 'https://amzn.to/3S5TZ8U'
   endif
 %}
 
@@ -27,16 +42,16 @@
       <span class="sliger-hero-prop sliger-hero-prop--leaf"></span>
       <span class="sliger-hero-prop sliger-hero-prop--foam"></span>
       <span class="sliger-hero-prop sliger-hero-prop--drop"></span>
-      <img class="sliger-hero-product sliger-hero-product--simple" src="{{ 'sliger-simple-facewash-cutout.png' | asset_url }}" alt="" width="408" height="612" loading="eager">
-      <img class="sliger-hero-product sliger-hero-product--ordinary" src="{{ 'sliger-ordinary-glucoside-cutout.png' | asset_url }}" alt="" width="447" height="559" loading="eager">
-      <img class="sliger-hero-product sliger-hero-product--minimalist" src="{{ 'sliger-minimalist-cleanser-cutout.png' | asset_url }}" alt="" width="426" height="586" loading="eager">
-      <img class="sliger-hero-product sliger-hero-product--cetaphil" src="{{ 'sliger-cetaphil-cutout.png' | asset_url }}" alt="" width="552" height="828" loading="eager">
+      <img class="sliger-hero-product sliger-hero-product--simple" src="{{ 'sliger-product-dot-key.jpg' | asset_url }}" alt="" width="1500" height="1500" loading="eager">
+      <img class="sliger-hero-product sliger-hero-product--ordinary" src="{{ 'sliger-product-face-shop-rice.jpg' | asset_url }}" alt="" width="1000" height="1000" loading="eager">
+      <img class="sliger-hero-product sliger-hero-product--minimalist" src="{{ 'sliger-product-minimalist.webp' | asset_url }}" alt="" width="300" height="300" loading="eager">
+      <img class="sliger-hero-product sliger-hero-product--cetaphil" src="{{ 'sliger-product-sebamed.jpg' | asset_url }}" alt="" width="1083" height="1500" loading="eager">
     </div>
 
     <div class="sliger-shell sliger-premium-hero__content">
-      <p class="sliger-premium-kicker">Curated cleanser edit</p>
-      <h1 id="sliger-hero-title">Say hello to your new favorite daily cleanse.</h1>
-      <p>Premium skincare picks for fresh mornings, gentle resets, and clean-feeling skin without a crowded routine.</p>
+      <p class="sliger-premium-kicker">Premium cleanser edit</p>
+      <h1 id="sliger-hero-title">Find the cleanser your skin actually needs.</h1>
+      <p>Seven curated face washes for hydration, brightening, barrier support, oil control, and gentle daily cleansing.</p>
       <div class="sliger-premium-actions">
         <a class="sliger-premium-button" href="#shop">Shop cleansers <span aria-hidden="true">&rarr;</span></a>
         <a class="sliger-premium-button sliger-premium-button--light" href="#compare">Compare picks <span aria-hidden="true">&rarr;</span></a>
@@ -47,19 +62,19 @@
   <section class="sliger-premium-proof" aria-labelledby="sliger-proof-title">
     <div class="sliger-shell sliger-premium-proof__grid">
       <div class="sliger-premium-quote">
-        <h2 id="sliger-proof-title">"Products like these make everyday cleansing feel considered, simple, and premium."</h2>
-        <div class="sliger-premium-press" aria-label="Featured editorial labels">
-          <span>BRIT+CO</span>
-          <span>Editorial Pick</span>
-          <span>Skin Guide</span>
-          <span>Clean Routine</span>
+        <h2 id="sliger-proof-title">"A short, clean edit of skincare bestsellers makes choosing a cleanser feel simple and premium."</h2>
+        <div class="sliger-premium-press" aria-label="Shopping proof points">
+          <span>Hydrating</span>
+          <span>Brightening</span>
+          <span>Sensitive skin</span>
+          <span>Oil control</span>
         </div>
       </div>
 
       <a class="sliger-premium-review" href="#shop">
-        <strong>Over 1,600 Shopper Notes</strong>
+        <strong>7 focused cleanser picks</strong>
         <span aria-label="Five stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-        <small>read the reviews</small>
+        <small>shop the edit</small>
       </a>
     </div>
   </section>
@@ -67,84 +82,136 @@
   <section class="sliger-premium-benefits" aria-label="Product benefits">
     <div class="sliger-premium-benefits__track">
       <span>Dermatologist-loved formulas</span>
-      <span>Gentle daily options</span>
-      <span>Fresh-feeling cleanse</span>
-      <span>Oily-skin friendly</span>
-      <span>No routine confusion</span>
+      <span>Hydrating options</span>
+      <span>Gentle daily cleansing</span>
+      <span>Brightening routines</span>
+      <span>Amazon checkout</span>
+      <span>Barrier support</span>
     </div>
   </section>
 
   <section id="shop" class="sliger-premium-section sliger-premium-products" aria-labelledby="sliger-products-title">
     <div class="sliger-shell">
       <div class="sliger-premium-heading">
-        <h2 id="sliger-products-title">Our science-backed cleanser picks</h2>
+        <h2 id="sliger-products-title">Shop cleanser picks by skin goal</h2>
         <div class="sliger-premium-tabs" data-sliger-filter-group aria-label="Filter products">
           <button class="is-active" type="button" data-sliger-filter="all" aria-pressed="true">all</button>
-          <button type="button" data-sliger-filter="fresh" aria-pressed="false">fresh</button>
+          <button type="button" data-sliger-filter="hydrating" aria-pressed="false">hydrating</button>
           <button type="button" data-sliger-filter="brightening" aria-pressed="false">brighten</button>
           <button type="button" data-sliger-filter="sensitive" aria-pressed="false">sensitive</button>
+          <button type="button" data-sliger-filter="oil" aria-pressed="false">oil control</button>
         </div>
       </div>
 
       <div class="sliger-premium-product-row">
         <article class="sliger-premium-product-intro">
-          <h3>Curated formulas to cleanse, refresh, and keep your shelf simple.</h3>
+          <h3>Pick by routine need, then complete checkout on Amazon.</h3>
           <a class="sliger-premium-button sliger-premium-button--light" href="#compare">Find your pick <span aria-hidden="true">&rarr;</span></a>
         </article>
 
-        <article class="sliger-premium-card" data-sliger-product="fresh sensitive">
-          <a class="sliger-premium-card__image" href="{{ simple_link }}" target="_blank" rel="sponsored noopener noreferrer">
-            <span>daily</span>
-            <img src="{{ 'sliger-simple-facewash-cutout.png' | asset_url }}" alt="Simple Refreshing Facial Wash" width="408" height="612" loading="lazy">
-          </a>
-          <div class="sliger-premium-card__body">
-            <div>
-              <h3>Simple Refreshing Facial Wash</h3>
-              <p>Kind-to-skin daily refresh</p>
-            </div>
-            <a href="{{ simple_link }}" target="_blank" rel="sponsored noopener noreferrer">Buy now</a>
-          </div>
-        </article>
-
-        <article class="sliger-premium-card" data-sliger-product="brightening">
+        <article class="sliger-premium-card" data-sliger-product="brightening oil">
           <a class="sliger-premium-card__image sliger-premium-card__image--pale" href="{{ minimalist_link }}" target="_blank" rel="sponsored noopener noreferrer">
             <span>brighten</span>
-            <img src="{{ 'sliger-minimalist-cleanser-cutout.png' | asset_url }}" alt="Minimalist Alpha Lipoic and Glycolic Cleanser" width="426" height="586" loading="lazy">
+            <img src="{{ 'sliger-product-minimalist.webp' | asset_url }}" alt="Minimalist Alpha Lipoic and Glycolic Cleanser" width="300" height="300" loading="lazy">
           </a>
           <div class="sliger-premium-card__body">
             <div>
               <h3>Minimalist Alpha Lipoic + Glycolic Cleanser</h3>
-              <p>Smoother-looking skin feel</p>
+              <p>For dullness, texture, and brightening routines.</p>
             </div>
             <a href="{{ minimalist_link }}" target="_blank" rel="sponsored noopener noreferrer">Buy now</a>
           </div>
         </article>
 
-        <article class="sliger-premium-card" data-sliger-product="sensitive foaming">
-          <a class="sliger-premium-card__image sliger-premium-card__image--blue" href="{{ cerave_link }}" target="_blank" rel="sponsored noopener noreferrer">
-            <span>oily skin</span>
-            <img src="{{ 'sliger-cetaphil-cutout.png' | asset_url }}" alt="Cetaphil Oily Skin Cleanser" width="552" height="828" loading="lazy">
+        <article class="sliger-premium-card" data-sliger-product="sensitive hydrating">
+          <a class="sliger-premium-card__image sliger-premium-card__image--blue" href="{{ derma_link }}" target="_blank" rel="sponsored noopener noreferrer" aria-label="The Derma Co 2% Niacinamide Gentle Skin Cleanser">
+            <span>gentle</span>
+            <div class="sliger-premium-card__mock" aria-hidden="true">
+              <small>The</small>
+              <strong>Derma Co</strong>
+              <em>2% Niacinamide Gentle Skin Cleanser</em>
+            </div>
           </a>
           <div class="sliger-premium-card__body">
             <div>
-              <h3>Cetaphil Oily Skin Cleanser</h3>
-              <p>Balanced daily cleansing</p>
+              <h3>The Derma Co 2% Niacinamide Gentle Skin Cleanser</h3>
+              <p>For dry, normal, and sensitive skin.</p>
+            </div>
+            <a href="{{ derma_link }}" target="_blank" rel="sponsored noopener noreferrer">Buy now</a>
+          </div>
+        </article>
+
+        <article class="sliger-premium-card" data-sliger-product="hydrating sensitive">
+          <a class="sliger-premium-card__image sliger-premium-card__image--green" href="{{ cerave_link }}" target="_blank" rel="sponsored noopener noreferrer" aria-label="CeraVe Hydrating Cleanser">
+            <span>hydrate</span>
+            <div class="sliger-premium-card__mock sliger-premium-card__mock--cerave" aria-hidden="true">
+              <small>CeraVe</small>
+              <strong>Hydrating Cleanser</strong>
+              <em>For normal to dry skin</em>
+            </div>
+          </a>
+          <div class="sliger-premium-card__body">
+            <div>
+              <h3>CeraVe Hydrating Cleanser</h3>
+              <p>For normal to dry skin and barrier support.</p>
             </div>
             <a href="{{ cerave_link }}" target="_blank" rel="sponsored noopener noreferrer">Buy now</a>
           </div>
         </article>
 
-        <article class="sliger-premium-card" data-sliger-product="fresh sensitive foaming">
-          <a class="sliger-premium-card__image sliger-premium-card__image--clean" href="{{ ordinary_link }}" target="_blank" rel="sponsored noopener noreferrer">
-            <span>foam</span>
-            <img src="{{ 'sliger-ordinary-glucoside-cutout.png' | asset_url }}" alt="The Ordinary Glucoside Foaming Cleanser" width="447" height="559" loading="lazy">
+        <article class="sliger-premium-card" data-sliger-product="brightening hydrating">
+          <a class="sliger-premium-card__image sliger-premium-card__image--rose" href="{{ face_shop_link }}" target="_blank" rel="sponsored noopener noreferrer">
+            <span>rice water</span>
+            <img src="{{ 'sliger-product-face-shop-rice.jpg' | asset_url }}" alt="The Face Shop Rice Water Bright Foaming Cleanser" width="1000" height="1000" loading="lazy">
           </a>
           <div class="sliger-premium-card__body">
             <div>
-              <h3>The Ordinary Glucoside Foaming Cleanser</h3>
-              <p>Soft foaming reset</p>
+              <h3>The Face Shop Rice Water Bright Foaming Cleanser</h3>
+              <p>For a soft, bright-looking cleansing routine.</p>
             </div>
-            <a href="{{ ordinary_link }}" target="_blank" rel="sponsored noopener noreferrer">Buy now</a>
+            <a href="{{ face_shop_link }}" target="_blank" rel="sponsored noopener noreferrer">Buy now</a>
+          </div>
+        </article>
+
+        <article class="sliger-premium-card" data-sliger-product="sensitive oil">
+          <a class="sliger-premium-card__image sliger-premium-card__image--clean" href="{{ sebamed_link }}" target="_blank" rel="sponsored noopener noreferrer">
+            <span>pH 5.5</span>
+            <img src="{{ 'sliger-product-sebamed.jpg' | asset_url }}" alt="Sebamed Gentle Facial Cleanser" width="1083" height="1500" loading="lazy">
+          </a>
+          <div class="sliger-premium-card__body">
+            <div>
+              <h3>Sebamed Gentle Facial Cleanser</h3>
+              <p>For sensitive, oily, and combination skin.</p>
+            </div>
+            <a href="{{ sebamed_link }}" target="_blank" rel="sponsored noopener noreferrer">Buy now</a>
+          </div>
+        </article>
+
+        <article class="sliger-premium-card" data-sliger-product="hydrating sensitive">
+          <a class="sliger-premium-card__image sliger-premium-card__image--aqua" href="{{ dotkey_link }}" target="_blank" rel="sponsored noopener noreferrer">
+            <span>barrier</span>
+            <img src="{{ 'sliger-product-dot-key.jpg' | asset_url }}" alt="DOT &amp; KEY Barrier Repair Hydrating Gentle Face Wash" width="1500" height="1500" loading="lazy">
+          </a>
+          <div class="sliger-premium-card__body">
+            <div>
+              <h3>DOT &amp; KEY Barrier Repair + Hydrating Gentle Face Wash</h3>
+              <p>For dry, normal, and sensitive skin.</p>
+            </div>
+            <a href="{{ dotkey_link }}" target="_blank" rel="sponsored noopener noreferrer">Buy now</a>
+          </div>
+        </article>
+
+        <article class="sliger-premium-card" data-sliger-product="oil">
+          <a class="sliger-premium-card__image sliger-premium-card__image--amber" href="{{ neutrogena_link }}" target="_blank" rel="sponsored noopener noreferrer">
+            <span>deep clean</span>
+            <img src="{{ 'sliger-product-neutrogena.jpg' | asset_url }}" alt="Neutrogena Deep Clean Gentle Facial Cleanser" width="1001" height="1001" loading="lazy">
+          </a>
+          <div class="sliger-premium-card__body">
+            <div>
+              <h3>Neutrogena Deep Clean Gentle Facial Cleanser</h3>
+              <p>For normal to oily skin and a clean fresh feel.</p>
+            </div>
+            <a href="{{ neutrogena_link }}" target="_blank" rel="sponsored noopener noreferrer">Buy now</a>
           </div>
         </article>
       </div>
@@ -153,14 +220,14 @@
 
   <section class="sliger-premium-section sliger-premium-story">
     <div class="sliger-shell sliger-premium-story__grid">
-      <div class="sliger-premium-story__image">
-        <img src="{{ 'sliger-cetaphil-water.jpg' | asset_url }}" alt="Cleanser bottle with water splash" width="736" height="1104" loading="lazy">
+      <div class="sliger-premium-story__image sliger-premium-story__image--collage">
+        <img src="{{ 'sliger-simple-oily.jpg' | asset_url }}" alt="Fresh face wash lifestyle flat lay" width="736" height="736" loading="lazy">
       </div>
       <div class="sliger-premium-story__copy">
-        <p class="sliger-premium-kicker">More about us</p>
-        <h2>Clean routines, edited for everyday shoppers.</h2>
-        <p>SLIGER keeps the decision simple: a short list of focused skincare products, clear use cases, and direct checkout through trusted product pages.</p>
-        <a class="sliger-premium-button sliger-premium-button--light" href="/pages/about">Get the full story <span aria-hidden="true">&rarr;</span></a>
+        <p class="sliger-premium-kicker">More about the edit</p>
+        <h2>A cleaner shopping page for daily skincare decisions.</h2>
+        <p>SLIGER now shows a focused cleanser collection with clearer text contrast, consistent cards, active product links, and filters that help shoppers choose faster.</p>
+        <a class="sliger-premium-button sliger-premium-button--light" href="#shop">Shop the lineup <span aria-hidden="true">&rarr;</span></a>
       </div>
     </div>
   </section>
@@ -168,21 +235,21 @@
   <section id="compare" class="sliger-premium-section sliger-premium-how" aria-labelledby="sliger-how-title">
     <div class="sliger-shell sliger-premium-how__grid">
       <div>
-        <p class="sliger-premium-kicker">How our picks work</p>
+        <p class="sliger-premium-kicker">How to choose</p>
         <h2 id="sliger-how-title">
-          <span>morning cleanse</span>
-          <span>oil balance</span>
-          <span>gentle foam</span>
+          <span>hydration first</span>
+          <span>brightening care</span>
+          <span>oil control</span>
         </h2>
         <div class="sliger-premium-steps">
-          <div><strong>1</strong><span>Choose your skin goal.</span></div>
-          <div><strong>2</strong><span>Open the product page.</span></div>
+          <div><strong>1</strong><span>Pick a skin goal.</span></div>
+          <div><strong>2</strong><span>Compare ingredients.</span></div>
           <div><strong>3</strong><span>Checkout on Amazon.</span></div>
         </div>
-        <a class="sliger-premium-button sliger-premium-button--light" href="#shop">Learn more <span aria-hidden="true">&rarr;</span></a>
+        <a class="sliger-premium-button sliger-premium-button--light" href="#shop">View products <span aria-hidden="true">&rarr;</span></a>
       </div>
       <div class="sliger-premium-how__image">
-        <img src="{{ 'sliger-cetaphil-editorial.jpg' | asset_url }}" alt="Cetaphil cleanser editorial product image" width="736" height="1104" loading="lazy">
+        <img src="{{ 'sliger-cetaphil-editorial.jpg' | asset_url }}" alt="Cleanser editorial product image" width="736" height="1104" loading="lazy">
       </div>
     </div>
   </section>
@@ -199,18 +266,33 @@
     },
     {
       "type": "url",
+      "id": "derma_link",
+      "label": "The Derma Co buy link"
+    },
+    {
+      "type": "url",
       "id": "cerave_link",
-      "label": "Cetaphil/CeraVe buy link"
+      "label": "CeraVe Hydrating Cleanser buy link"
     },
     {
       "type": "url",
-      "id": "simple_link",
-      "label": "Simple buy link"
+      "id": "face_shop_link",
+      "label": "The Face Shop Rice Water buy link"
     },
     {
       "type": "url",
-      "id": "ordinary_link",
-      "label": "The Ordinary buy link"
+      "id": "sebamed_link",
+      "label": "Sebamed buy link"
+    },
+    {
+      "type": "url",
+      "id": "dotkey_link",
+      "label": "DOT & KEY buy link"
+    },
+    {
+      "type": "url",
+      "id": "neutrogena_link",
+      "label": "Neutrogena buy link"
     }
   ],
   "presets": [
