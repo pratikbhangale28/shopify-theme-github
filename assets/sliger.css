@@ -2667,6 +2667,58 @@ body:has(.sliger-premium-home) .sliger-nav a:hover {
   background: var(--premium-ink);
 }
 
+.sliger-premium-category-grid {
+  display: grid;
+  width: min(100%, 1040px);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 28px;
+  border-bottom: 0;
+}
+
+.sliger-premium-category-grid button {
+  display: grid;
+  gap: 6px;
+  min-height: 92px;
+  border: 1px solid rgba(0, 77, 112, 0.16);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.74);
+  padding: 18px;
+  text-align: left;
+  box-shadow: 0 18px 36px rgba(0, 77, 112, 0.06);
+}
+
+.sliger-premium-category-grid button::after {
+  display: none;
+}
+
+.sliger-premium-category-grid button strong,
+.sliger-premium-category-grid button span {
+  display: block;
+}
+
+.sliger-premium-category-grid button strong {
+  color: var(--premium-ink);
+  font-size: 1rem;
+  line-height: 1.15;
+}
+
+.sliger-premium-category-grid button span {
+  color: rgba(0, 77, 112, 0.68);
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+
+.sliger-premium-category-grid button.is-active {
+  border-color: var(--premium-ink);
+  background: var(--premium-ink);
+}
+
+.sliger-premium-category-grid button.is-active strong,
+.sliger-premium-category-grid button.is-active span {
+  color: #ffffff;
+}
+
 .sliger-premium-product-row {
   display: grid;
   gap: 20px;
@@ -2747,6 +2799,10 @@ body:has(.sliger-premium-home) .sliger-nav a:hover {
 
 .sliger-premium-card__image--amber::before {
   background: #f5dfbd;
+}
+
+.sliger-premium-card__image--fresh::before {
+  background: #d8f2fb;
 }
 
 .sliger-premium-card__image span {
@@ -2979,6 +3035,10 @@ body:has(.sliger-premium-home) .sliger-nav a:hover {
 }
 
 @media screen and (min-width: 750px) {
+  .sliger-premium-category-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .sliger-premium-proof__grid {
     grid-template-columns: minmax(0, 1fr) minmax(210px, 0.36fr);
   }
@@ -3036,6 +3096,14 @@ body:has(.sliger-premium-home) .sliger-nav a:hover {
 }
 
 @media screen and (max-width: 749px) {
+  .sliger-premium-category-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sliger-premium-category-grid button {
+    min-height: 76px;
+  }
+
   body:has(.sliger-premium-home) .sliger-header__top-inner {
     animation-duration: 16s;
   }

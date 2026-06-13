@@ -14,6 +14,11 @@
     assign cerave_link = 'https://amzn.to/4vSRHZn'
   endif
 
+  assign cetaphil_link = section.settings.cetaphil_link
+  if cetaphil_link == blank
+    assign cetaphil_link = 'https://amzn.to/4xHEh46'
+  endif
+
   assign face_shop_link = section.settings.face_shop_link
   if face_shop_link == blank
     assign face_shop_link = 'https://amzn.to/43y4gx6'
@@ -47,7 +52,7 @@
     <div class="sliger-shell sliger-premium-hero__content">
       <p class="sliger-premium-kicker">Premium cleanser edit</p>
       <h1 id="sliger-hero-title">Find the cleanser your skin actually needs.</h1>
-      <p>Seven curated face washes for hydration, brightening, barrier support, oil control, and gentle daily cleansing.</p>
+      <p>Eight curated face washes for hydration, brightening, barrier support, oil control, and gentle daily cleansing.</p>
       <div class="sliger-premium-actions">
         <a class="sliger-premium-button" href="#shop">Shop cleansers <span aria-hidden="true">&rarr;</span></a>
         <a class="sliger-premium-button sliger-premium-button--light" href="#compare">Compare picks <span aria-hidden="true">&rarr;</span></a>
@@ -58,22 +63,37 @@
   <section id="shop" class="sliger-premium-section sliger-premium-products" aria-labelledby="sliger-products-title">
     <div class="sliger-shell">
       <div class="sliger-premium-heading">
-        <h2 id="sliger-products-title">Shop cleanser picks by skin goal</h2>
-        <div class="sliger-premium-tabs" data-sliger-filter-group aria-label="Filter products">
-          <button class="is-active" type="button" data-sliger-filter="all" aria-pressed="true">all</button>
-          <button type="button" data-sliger-filter="hydrating" aria-pressed="false">hydrating</button>
-          <button type="button" data-sliger-filter="brightening" aria-pressed="false">brighten</button>
-          <button type="button" data-sliger-filter="sensitive" aria-pressed="false">sensitive</button>
-          <button type="button" data-sliger-filter="oil" aria-pressed="false">oil control</button>
+        <p class="sliger-premium-kicker">Choose by face-wash category</p>
+        <h2 id="sliger-products-title">Shop all best cleanser picks first</h2>
+        <div class="sliger-premium-tabs sliger-premium-category-grid" data-sliger-filter-group aria-label="Choose a face wash category">
+          <button class="is-active" type="button" data-sliger-filter="all" aria-pressed="true">
+            <strong>All face washes</strong>
+            <span>Show every product</span>
+          </button>
+          <button type="button" data-sliger-filter="daily" aria-pressed="false">
+            <strong>Daily gentle</strong>
+            <span>Simple, mild routines</span>
+          </button>
+          <button type="button" data-sliger-filter="hydrating" aria-pressed="false">
+            <strong>Hydrating</strong>
+            <span>Dry or barrier care</span>
+          </button>
+          <button type="button" data-sliger-filter="brightening" aria-pressed="false">
+            <strong>Brightening</strong>
+            <span>Dullness and glow</span>
+          </button>
+          <button type="button" data-sliger-filter="sensitive" aria-pressed="false">
+            <strong>Sensitive skin</strong>
+            <span>Low-irritation picks</span>
+          </button>
+          <button type="button" data-sliger-filter="oil" aria-pressed="false">
+            <strong>Oil control</strong>
+            <span>Oily or combination skin</span>
+          </button>
         </div>
       </div>
 
       <div class="sliger-premium-product-row">
-        <article class="sliger-premium-product-intro">
-          <h3>Pick by routine need, then complete checkout on Amazon.</h3>
-          <a class="sliger-premium-button sliger-premium-button--light" href="#compare">Find your pick <span aria-hidden="true">&rarr;</span></a>
-        </article>
-
         <article class="sliger-premium-card" data-sliger-product="brightening oil">
           <a class="sliger-premium-card__image sliger-premium-card__image--pale" href="{{ minimalist_link }}" target="_blank" rel="sponsored noopener noreferrer">
             <span>brighten</span>
@@ -113,6 +133,20 @@
               <p>For normal to dry skin and barrier support.</p>
             </div>
             <a href="{{ cerave_link }}" target="_blank" rel="sponsored noopener noreferrer">Buy now</a>
+          </div>
+        </article>
+
+        <article class="sliger-premium-card" data-sliger-product="daily hydrating sensitive bestseller">
+          <a class="sliger-premium-card__image sliger-premium-card__image--fresh" href="{{ cetaphil_link }}" target="_blank" rel="sponsored noopener noreferrer">
+            <span>best seller</span>
+            <img src="{{ 'sliger-product-cetaphil-gentle.jpg' | asset_url }}" alt="Cetaphil Gentle Skin Cleanser" width="1500" height="1500" loading="lazy">
+          </a>
+          <div class="sliger-premium-card__body">
+            <div>
+              <h3>Cetaphil Gentle Skin Cleanser</h3>
+              <p>Best-seller for dry to normal, sensitive skin.</p>
+            </div>
+            <a href="{{ cetaphil_link }}" target="_blank" rel="sponsored noopener noreferrer">Buy now</a>
           </div>
         </article>
 
@@ -188,7 +222,7 @@
       </div>
 
       <a class="sliger-premium-review" href="#shop">
-        <strong>7 focused cleanser picks</strong>
+        <strong>8 focused cleanser picks</strong>
         <span aria-label="Five stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
         <small>shop the edit</small>
       </a>
@@ -200,6 +234,7 @@
       <span>Dermatologist-loved formulas</span>
       <span>Hydrating options</span>
       <span>Gentle daily cleansing</span>
+      <span>Best-seller picks</span>
       <span>Brightening routines</span>
       <span>Amazon checkout</span>
       <span>Barrier support</span>
@@ -261,6 +296,11 @@
       "type": "url",
       "id": "cerave_link",
       "label": "CeraVe Hydrating Cleanser buy link"
+    },
+    {
+      "type": "url",
+      "id": "cetaphil_link",
+      "label": "Cetaphil Gentle Skin Cleanser buy link"
     },
     {
       "type": "url",
